@@ -14,7 +14,8 @@
 
 kernel:
   image: "${HOOK_KERNEL_IMAGE}"
-  cmdline: "this_is_not_used=at_all_in_hook command_line_is_determined_by=ipxe"
+  # cmdline: "console=ttyS1 console=ttyS1 console=ttyS0 console=ttyAMA0 console=ttyS1 console=tty0 tink_worker_image=quay.io/tinkerbell/tink-worker:v0.10.1 syslog_host=10.80.9.200,10.80.9.201 grpc_authority=10.80.9.200:42113,10.80.9.201:42113 worker_id=cc:48:3a:12:5c:4d tinkerbell_tls=false"
+  cmdline: "#u8nda6ufbgp837zn07xb1wwh212gekw5bixoz5cy45y3krypw992nuofnocge0e345c2o98rqrp0g34n0qbum8n6ui12azvdve2mw5203j54jdr6i7uie8fzgd4bsexswah8a68fnabc6wvxo9xaau7k9kz1t28bc5rrg35xa48c1rji277jopd7v7xwd1sbz9xvzbdvyxtu9y6t2fom2s6ec3qvzkpz6h5y5yuti17ks74ugtsc3tdtfrzty37miqcsmeafim2pcpqgdwz#"
 
 init:
   # this init container sha has support for volumes
